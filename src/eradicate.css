@@ -12,10 +12,6 @@
 	text-align: left;
 }
 
-.__fb-dark-mode .nfe-quote-text {
-  color: white;
-}
-
 .nfe-info-panel p {
 	text-align: justify;
 	text-justify: inter-word;
@@ -219,7 +215,6 @@ button.nfe-button-primary {
 	font-weight: 400;
 }
 
-
 .nfe-checkbox {
 	cursor: pointer;
 	position: relative;
@@ -232,24 +227,13 @@ button.nfe-button-primary {
 	color: #ff0000;
 }
 
-/* This hides the news feed before the JS kicks in */
-div[id^='explorefeed_main_stream'],
-div[id^='topnews_main_stream'],
-div.ticker_stream,
-div.ego_column,
-#pagelet_home_stream,
-#pagelet_trending_tags_and_topics,
-#stories_pagelet_rhc,
-#fb_stories_card_root,
-#pagelet_gaming_destination_rhc,
-#pagelet_canvas_nav_content {
-	opacity: 0 !important;
-	pointer-events: none !important;
+/* This hides the Linkedin news feed before NFE kicks in */
+html:not([data-nfe-enabled='true']) .core-rail > .ember-view,
+html:not([data-nfe-enabled='true']) #nfe-container {
+	display: none;
 }
 
-html:not([data-nfe-enabled="false"]) div[role=feed],
-div[aria-label=Stories] {
-	opacity: 0 !important;
-	pointer-events: none !important;
-	height: 0 !important;
+html[data-nfe-enabled='true'] .nfe-linkedin-hide > .ember-view,
+html[data-nfe-enabled='true'] .nfe-linkedin-hide > .art-deco {
+	display: none;
 }

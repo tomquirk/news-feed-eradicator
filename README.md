@@ -1,7 +1,10 @@
 # News Feed Eradicator for LinkedIn
 
-A browser extension that deletes your LinkedIn news feed
-and replaces it with a nice quote.
+> Forked from [https://github.com/jordwest/news-feed-eradicator](jordwest/news-feed-eradicator). These project will eventually be part of the single browser extension. Follow https://github.com/jordwest/news-feed-eradicator/issues/63 for updates
+
+A browser extension that replaces your LinkedIn news feed with a motivational quote.
+
+![screenshot](./assets/Screenshot.png)
 
 ## Development
 
